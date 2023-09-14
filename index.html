@@ -31,6 +31,8 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
         }
 
         .card {
@@ -71,20 +73,37 @@
         .download-button:hover {
             background-color: #ab5729;
         }
+
+        .column {
+            flex: 1;
+            padding: 0 10px;
+        }
+
     </style>
 </head>
 <body>
     <nav>
         <h1>Darka's TFDB Rocket Configs</h1>
     </nav>
-
     <div class="container">
-        <div class="card">
+        <div class="column">
+            <h2>Smaller Rockets</h2>
+                    <div class="card">
+            <h2 class="card-title">Glowing Pink Ball Rocket - Default Sounds</h2>
+            <img class="card-image" src="config2.jpg" alt="Config 2">
+            <br>
+            <a class="download-button" href="./VPKs/A_Darka_Pink_Rocket.vpk" download>Download</a>
+        </div>
+        </div>
+
+        <div class="column">
+            <h2>Medium Rockets</h2>
+            <div class="card">
             <h2 class="card-title">White Bullet Bill Rocket - Custom Sounds</h2>
             <img class="card-image" src="config1.jpg" alt="Config 1">
             <br>
             <a class="download-button" href="./VPKs/Darka_Bill_Rocket_No_Sound.vpk" download>Download</a>
-        </div>
+            </div>
 
         <div class="card">
             <h2 class="card-title">White Bullet Bill Rocket - Default Sounds</h2>
@@ -106,22 +125,11 @@
             <br>
             <a class="download-button" href="./VPKs/Darka_Head_Rocket.vpk" download>Download</a>
         </div>
-
-        <div class="card">
-            <h2 class="card-title">Glowing Pink Ball Rocket - Default Sounds</h2>
-            <img class="card-image" src="config2.jpg" alt="Config 2">
-            <br>
-            <a class="download-button" href="./VPKs/A_Darka_Pink_Rocket.vpk" download>Download</a>
         </div>
 
-        <div class="card">
-            <h2 class="card-title">Glowing Pink Ball Rocket - Default Sounds</h2>
-            <img class="card-image" src="config2.jpg" alt="Config 2">
-            <br>
-            <a class="download-button" href="./VPKs/A_Darka_Pink_Rocket.vpk" download>Download</a>
-        </div>
-
-        <div class="card">
+        <div class="column">
+            <h2>Large Rockets</h2>
+            <div class="card">
             <h2 class="card-title">Gold Larger Default Rocket - Custom Sounds</h2>
             <img class="card-image" src="config2.jpg" alt="Config 2">
             <br>
@@ -134,7 +142,9 @@
             <br>
             <a class="download-button" href="./VPKs/Darka_Rocket_Trail_Black_Biggest.vpk" download>Download</a>
         </div>
+        </div>
     </div>
+
 </body>
 
 
